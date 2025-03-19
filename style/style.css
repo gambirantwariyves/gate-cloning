@@ -62,27 +62,35 @@ header nav ul{
 }
 
 header nav ul li{
-  padding: 20px;
+  padding: 10px;
 }
 
 header li a{
   color: #fff;
 }
 
-.intro-content{
-  /* color: #fff;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin-top: 20%; */
-}
-/* .left-intro{
-  margin-top: 20rem;
-} */
 
 .intro{
-  /* background-image: url('../images/banner-bg.jpg.jpeg');
+  background-image: url('../images/banner-bg.jpg.jpeg');
   background-size: cover;
-  background-position: center; */
-  /* padding: 0px 5rem; */
+  background-position: center; 
+  padding: 0px 5rem;
+}
+
+.intro-content{
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 20%; */
+  height: 120vh;
+  margin-top: 10%;
+}
+
+.intro h1{
+  font-size: 50px;
+}
+
+.left-intro{
+  padding-right: 10rem;
 }
