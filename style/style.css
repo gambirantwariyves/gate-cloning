@@ -84,7 +84,6 @@ header li a{
   align-items: center;
   /* margin-top: 20%; */
   height: 120vh;
-  margin-top: 10%;
 }
 
 .intro h1{
@@ -94,3 +93,41 @@ header li a{
 .left-intro{
   padding-right: 10rem;
 }
+
+.intro-flex{
+  position: relative;
+}
+
+.intro-flex img{
+  position: absolute;
+  left: 25%;
+}
+
+.left-intro .form-input{
+  background-color: #fff;
+  display: flex;
+  /* padding: 0px 10px; */
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 70%;
+  transition: 300ms;
+}
+
+.left-intro >div{
+  margin-top: 15%;
+
+}
+
+.form-input input{
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0px 10px;
+}
+
+.form-input a:hover{
+  background-color: #0071f8;
+}
+
+
+
