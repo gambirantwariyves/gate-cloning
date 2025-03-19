@@ -19,6 +19,10 @@ a {
   color: #fff;
 }
 
+.small {
+  color: #363636;
+}
+
 .btn {
   padding: 10px 20px;
   border-radius: 20px;
@@ -29,7 +33,7 @@ a {
   color: #fff;
 }
 
-.danger-text{
+.danger-text {
   color: #ee626b;
 }
 
@@ -38,19 +42,24 @@ a {
 }
 
 header {
-  background-color: #0071f8;
-  position: fixed;
+  position: absolute;
   width: 97%;
   left: 1%;
   top: 2%;
   display: flex;
   align-items: center;
-  gap: 20rem;
+  gap: 30rem;
   grid-template-columns: 1fr 1fr;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 10px 5rem;
+  padding:20px 10px;
   z-index: 999;
+  transition: 300ms;
+}
+
+.scroll-header {
+  position: fixed;
+  background-color: #0071f8;
 }
 
 header img {
@@ -59,11 +68,11 @@ header img {
 
 header nav ul {
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 header nav ul li {
-  padding: 10px;
+  padding: 0 15px;
 }
 
 header li a {
@@ -166,7 +175,7 @@ header li a {
   bottom: -30px;
 }
 
-.intro-dashbord{
+.intro-dashbord {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -176,7 +185,7 @@ header li a {
   bottom: -40%;
 }
 
-.intro-dashbord .dashbord{
+.intro-dashbord .dashbord {
   background-color: #fff;
   padding: 3rem 4rem;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.228);
@@ -185,59 +194,90 @@ header li a {
   justify-items: center;
 }
 
-.dashbord .dash-img{
+.dashbord .dash-img {
   width: 70%;
 }
 
-.dash-img img{
+.dash-img img {
   background-color: #0071f8;
   border-radius: 50%;
   width: 100%;
   padding: 20px;
+  transition: 300ms;
 }
 
-.trends{
+.dashbord:hover .dash-img img {
+  background-color: #ee626b;
+}
+
+.trends {
   margin-top: 20%;
-  padding-right: 1%;
+  padding: 0 5%;
 }
 
-.trend-header{
+.trend-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.trend-content{
+.trend-content {
   border-radius: 20px;
   background-color: #eeeeee;
 }
 
-.trend-footer{
+.trend-footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 10px 10px 10px;
 }
 
-.trend-footer img{
+h3 {
+  transition: 300ms;
+}
+
+.trend-footer img {
   background-color: #ee626b;
   width: 70%;
   padding: 10px;
   border-radius: 50%;
+  transition: 300ms;
 }
 
-.trends-flex{
+.trends-flex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5rem;
+  gap: 2rem;
+  margin-top: 5%;
 }
 
-.trend-img{
+.trend-img {
   background-color: #ee626b;
   height: 30vh;
   overflow: hidden;
   border-radius: 20px;
+  position: relative;
 }
 
-.trend-img img{
+.trend-img img {
   width: 100%;
+}
+
+.trend-discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #0071f8;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.trend-content:hover .trend-footer img {
+  background-color: #0071f8;
+}
+
+.trend-content:hover .trend-footer h3 {
+  color: #0071f8;
 }
