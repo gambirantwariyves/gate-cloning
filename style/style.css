@@ -26,6 +26,11 @@ a {
 
 .danger {
   background-color: #ee626b;
+  color: #fff;
+}
+
+.danger-text{
+  color: #ee626b;
 }
 
 .blue {
@@ -111,10 +116,6 @@ header li a {
   transition: 300ms;
 }
 
-.intro-content {
-  /* padding-top: 5rem; */
-}
-
 .left-intro>div {
   margin-top: 10%;
 
@@ -193,4 +194,50 @@ header li a {
   border-radius: 50%;
   width: 100%;
   padding: 20px;
+}
+
+.trends{
+  margin-top: 20%;
+  padding-right: 1%;
+}
+
+.trend-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trend-content{
+  border-radius: 20px;
+  background-color: #eeeeee;
+}
+
+.trend-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 10px 10px;
+}
+
+.trend-footer img{
+  background-color: #ee626b;
+  width: 70%;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.trends-flex{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+}
+
+.trend-img{
+  background-color: #ee626b;
+  height: 30vh;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.trend-img img{
+  width: 100%;
 }
