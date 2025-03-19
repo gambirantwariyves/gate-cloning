@@ -1,43 +1,38 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-left: 1%;
 }
 
-ul{
+ul {
   list-style: none;
-}  
+}
 
-a{
+a {
   text-decoration: none;
   font-size: large;
   color: #fff;
 }
 
-.btn{
+.btn {
   padding: 10px 20px;
   border-radius: 20px;
-}
-
-.circle{
-  padding: 30px;
-  border-radius: 50%;
 }
 
 .danger {
   background-color: #ee626b;
 }
 
-.blue{
+.blue {
   background-color: #0071f8;
 }
 
-header{
+header {
   background-color: #0071f8;
   position: fixed;
   width: 97%;
@@ -52,58 +47,58 @@ header{
   padding: 10px 5rem;
 }
 
-header img{
+header img {
   width: 100px;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
   padding: 10px;
 }
 
-header nav ul li{
+header nav ul li {
   padding: 10px;
 }
 
-header li a{
+header li a {
   color: #fff;
 }
 
 
-.intro{
+.intro {
   background-image: url('../images/banner-bg.jpg.jpeg');
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   padding: 0px 5rem;
 }
 
-.intro-content{
+.intro-content {
   color: #fff;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   /* margin-top: 20%; */
   height: 120vh;
 }
 
-.intro h1{
+.intro h1 {
   font-size: 50px;
 }
 
-.left-intro{
+.left-intro {
   padding-right: 10rem;
 }
 
-.intro-flex{
+.intro-flex {
   position: relative;
 }
 
-.intro-flex img{
+.intro-flex img {
   position: absolute;
   left: 25%;
 }
 
-.left-intro .form-input{
+.left-intro .form-input {
   background-color: #fff;
   display: flex;
   /* padding: 0px 10px; */
@@ -113,21 +108,56 @@ header li a{
   transition: 300ms;
 }
 
-.left-intro >div{
-  margin-top: 15%;
+.intro-content {
+  padding-top: 10rem;
+}
+
+.left-intro>div {
+  margin-top: 10%;
 
 }
 
-.form-input input{
+.form-input input {
   border: none;
   outline: none;
   background: transparent;
   padding: 0px 10px;
 }
 
-.form-input a:hover{
+.form-input a:hover {
   background-color: #0071f8;
 }
 
+.rigth-intro {
+  width: 70%;
+  position: relative;
+}
 
+.rigth-intro .img {
+  border-radius: 20px;
+  overflow: hidden;
+}
 
+.rigth-intro .img img {
+  width: 100%;
+}
+
+.rigth-intro .cost,
+.discount {
+  position: absolute;
+  font-weight: 900
+}
+
+.rigth-intro .cost {
+  top: 10%;
+  right: 5%;
+}
+
+.rigth-intro .discount {
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: #ee626b;
+  left: -30px;
+  bottom: -30px;
+}
