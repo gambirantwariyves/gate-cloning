@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}  
+
+a{
+  text-decoration: none;
+}
+
+
+header{
+  background-color: #0071f8;
+  position: fixed;
+  width: 97%;
+  left: 1%;
+  top: 2%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px 5rem;
+}
+
+header img{
+  width: 100px;
+}
+
+header nav ul{
+  display: flex;
+  padding: 10px;
+}
+
+header nav ul li{
+  padding: 10px;
+}
+
+header li a{
+  color: #fff;
+}
