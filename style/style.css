@@ -26,6 +26,7 @@ a {
 .btn {
   padding: 10px 20px;
   border-radius: 20px;
+  transition: 300ms;
 }
 
 .danger {
@@ -84,7 +85,7 @@ header li a {
   background-image: url('../images/banner-bg.jpg.jpeg');
   background-size: cover;
   background-position: center;
-  padding: 0px 5rem;
+  padding: 0px 10rem;
   border-bottom-left-radius: 10rem;
   border-bottom-right-radius: 10rem;
 }
@@ -144,6 +145,9 @@ header li a {
 .rigth-intro {
   width: 70%;
   position: relative;
+  background-image: url('../images/banner-image.jpg.jpeg');
+  border-radius: 20px;
+  background-size: cover;
 }
 
 .rigth-intro .img {
@@ -210,12 +214,12 @@ header li a {
   background-color: #ee626b;
 }
 
-.trends {
+.trends{
   margin-top: 20%;
   padding: 0 5%;
 }
 
-.trend-header {
+.trend-header, .trend-heade {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -252,9 +256,8 @@ h3 {
 }
 
 .trend-img {
-  background-color: #ee626b;
-  height: 30vh;
   overflow: hidden;
+  height: 20vh;
   border-radius: 20px;
   position: relative;
 }
@@ -280,4 +283,86 @@ h3 {
 
 .trend-content:hover .trend-footer h3 {
   color: #0071f8;
+}
+
+ .top-games {
+  margin-top: 10%;
+  padding: 8rem 5rem;
+  background-color: #eeeeee;
+  border-radius: 10rem;
+}
+
+.trend-content.top-ones{
+  background-color: #faf8f8;
+  cursor: pointer;
+}
+
+.top-ones:hover h3{
+  color: #0071f8;
+}
+
+.top-ones:hover .btn{
+  background-color: #0071f8;
+}
+
+.top-footer, .top-footer-text{
+  justify-items: center;
+  padding: 20px 0px;
+  position: relative;
+}
+
+.top-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 5%;
+}
+
+.trend-footer-btn{
+  margin-top: 15%;
+  position: absolute;
+  bottom: -10px;
+  left: 20%;
+}
+
+.category {
+  margin-top: 10%;
+  padding: 8rem 5rem;
+}
+
+.category-header{
+  justify-items: center;
+}
+
+.category-top{
+  background-color: #0071f8;
+}
+
+.category-flex{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.category-content{
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #0071f8;
+  height: 40vh;
+}
+
+.category-top{
+  padding: 20px;
+  justify-items: center;
+  color: #fff;
+}
+
+.category-img{
+  border-radius: 20px;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.category-img img{
+  width: 100%;
 }
