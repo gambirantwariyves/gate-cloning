@@ -80,6 +80,7 @@ header li a {
   color: #fff;
 }
 
+
 .intro {
   background-image: url('../images/banner-bg.jpg.jpeg');
   background-size: cover;
@@ -95,7 +96,6 @@ header li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 20%; */
   height: 120vh;
 }
 
@@ -176,6 +176,7 @@ header li a {
   top: 10%;
   right: 5%;
 }
+
 
 .rigth-intro .discount {
   padding: 30px;
@@ -312,6 +313,7 @@ h3 {
   color: #0071f8;
 }
 
+
 .top-ones:hover .btn{
   background-color: #0071f8;
 }
@@ -341,6 +343,7 @@ h3 {
   padding: 8rem 5rem;
 }
 
+
 .category-header{
   justify-items: center;
 }
@@ -367,6 +370,7 @@ h3 {
   justify-items: center;
   color: #fff;
 }
+
 
 .category-img{
   border-radius: 20px;
@@ -396,7 +400,6 @@ h3 {
   padding: 5rem;
   border-radius: 20px;
   width: 50%;
-  /* justify-items: center; */
 }
 
 .subscribe-one >div h3,h1,p{
@@ -415,14 +418,12 @@ h3 {
 .newsletter{
   right: 10rem;
   bottom: -10rem;
-}
+} 
 
 .form-input{
   display: flex;
-  /* padding: 0px 10px; */
   justify-content: space-between;
   border-radius: 20px;
-  /* width: 70%; */
   transition: 300ms;
   background-color: #fff;
 }
@@ -437,9 +438,11 @@ footer{
   padding: 20px 0;
   color: #fff;
   font-weight: bold;
-}
+} 
 
 @media (max-width: 1200px) {
+  body{
+  }
 
   .btn{
     font-size: 15px;
@@ -462,6 +465,7 @@ footer{
     padding: 2rem;
     justify-content: none;
     padding-right: 10rem;
+    width: 100%;
   }
 
   .left-intro{
@@ -474,6 +478,19 @@ footer{
 
   .intro-dashbord{
     bottom: -50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    bottom: -20rem;
+    left: 10%;
+  }
+
+  .dash-img img{
+    width: 80%;
+  }
+
+  .intro-dashbord .dashbord{
+    padding: 3rem 2rem;
   }
 }
 
@@ -493,9 +510,48 @@ footer{
   }
 
   header img {
-    width: 50%;
+    width: 30%;
     margin-left: 10rem;
   }
+
+  .left-intro .form-input {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 100%;
+    transition: 300ms;
+    margin-bottom: 10%;
+  }
+
+  .intro{
+    height: 270vh;
+  }
+
+  .rigth-intro{
+    padding: 0;
+    right: 7%;
+    width: 55%;
+  }
+
+  .intro-dashbord img{
+    width: 40%;
+    padding: 0;
+  }
+  
+  .dashbord{
+    width: 80%;
+  }
+
+  .intro-dashbord{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    bottom: -90rem;
+    left: 10%;
+    padding: 0;
+  }
+
 }
 
 
