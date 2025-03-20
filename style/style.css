@@ -536,7 +536,8 @@ footer{
 
   .intro-dashbord img{
     width: 40%;
-    padding: 0;
+    padding: 10px;
+    margin-left: 25%;
   }
   
   .dashbord{
@@ -547,9 +548,27 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    bottom: -90rem;
+    bottom: -80rem;
     left: 10%;
     padding: 0;
+  }
+
+  .trends{
+    margin-top: 50%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .trends-flex, .top-flex{
+    grid-template-columns: 1fr 1fr;
+  }
+.top-flex{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+  .top-games .trend-img{
+    height: 30vh;
   }
 
 }
